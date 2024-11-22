@@ -43,54 +43,83 @@
             cursor: pointer;
             margin-top: 10px;
         }
-        .button:hover {
-            background-color: #2e8e44;
-        }
     </style>
 </head>
 <body>
     <h1>Survey Form</h1>
     <section>
         <form>
-            <label>Name</label> &emsp; <br/>
-            <input type="text" name="firstname" placeholder="Enter your name" />
-            <BR></BR>
-            <label>Email</label> &emsp; <br/>
-            <input type="email" name="email" placeholder="Enter your email" />
-            <BR></BR>
-            <label>Age</label> &emsp; <br/>
-            <input type="text" name="age" placeholder="Enter your age"/>
-            <BR></BR>
-            <label>Which option best describes you?</label> &emsp; <br>
-            <select>
-                <option>Student</option>
-                <option>Businessman</option>
-                <option>Educator</option>
-                <option>Job</option> 
-            </select>
-            <BR></BR>
-            <label>Would you recommend GeeksforGeeks to a friend?</label>
-            <br/>
-            <input type="radio" value="1" name="option"/> Yes <br/>
-            <input type="radio" value="2" name="option"/> No <br/>
-            <input type="radio" value="3" name="option"/> Maybe <br/>
-            <BR></BR>
-            <label>Languages and Frameworks known (Check all that apply)</label> <br/>
-            <input type="checkbox" value="1" name="lang"> C <br/>
-            <input type="checkbox" value="2" name="lang"> C++ <br/>
-            <input type="checkbox" value="3" name="lang"> C# <br/>
-            <input type="checkbox" value="4" name="lang"> Java <br/>
-            <input type="checkbox" value="5" name="lang"> Python <br/>
-            <input type="checkbox" value="6" name="lang"> JavaScript <br/>
-            <input type="checkbox" value="7" name="lang"> React <br/>
-            <input type="checkbox" value="8" name="lang"> Angular <br/>
-            <input type="checkbox" value="9" name="lang"> Django <br/>
-            <input type="checkbox" value="10" name="lang"> Spring <br/>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
             <BR></BR>
 
-            <label>Any comments or suggestions</label> <br/>
-            <textarea cols="70" rows="2"></textarea>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
             <BR></BR>
+
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age" />
+            <BR></BR>
+
+
+            <label for="occupation">Which option describes you the best?</label>
+            <select id="occupation" name="occupation">
+                <option value="student">Student</option>
+                <option value="businessman">Businessman</option>
+                <option value="educator">Educator</option>
+                <option value="job">Job</option>
+            </select>
+            <BR></BR>
+
+
+            <label>Would you recommend GeeksforGeeks to a friend?</label><br/>
+            <input type="radio" id="yes" value="yes" name="recommend" />
+            <label for="yes">Yes</label><br />
+            <input type="radio" id="no" value="no" name="recommend" />
+            <label for="no">No</label><br />
+            <input type="radio" id="maybe" value="maybe" name="recommend" />
+            <label for="maybe">Maybe</label>
+            <BR></BR>
+
+
+            <label>Languages and Frameworks known (Check all that apply) <br/>
+                <label for="c">
+                    <input type="checkbox" id="c" value="c" name="lang" />C
+                </label><br/>
+                <label for="cpp">
+                    <input type="checkbox" id="cpp" value="cpp" name="lang" />C++
+                </label><br/>
+                <label for="csharp">
+                    <input type="checkbox" id="csharp" value="csharp" name="lang" />C#
+                </label><br/>
+                <label for="java">
+                    <input type="checkbox" id="java" value="java" name="lang" />Java
+                </label><br/>
+                <label for="python">
+                    <input type="checkbox" id="python" value="python" name="lang" />Python
+                </label><br/>
+                <label for="js">
+                    <input type="checkbox" id="js" value="js" name="lang" />Javascript
+                </label><br/><label for="react">
+                    <input type="checkbox" id="react" value="react" name="lang" />React
+                </label><br/><label for="angular">
+                    <input type="checkbox" id="angular" value="angular" name="lang" />Angular
+                </label><br/><label for="django">
+                    <input type="checkbox" id="django" value="django" name="lang" />Django
+                </label><br/><label for="spring">
+                    <input type="checkbox" id="spring" value="spring" name="lang" />Spring
+                </label><br/>
+            <BR></BR>
+
+
+            <label>Any comments or suggestions <br/>
+                <textarea cols="70" rows="2"></textarea>
+            </label>   
+            <BR></BR>
+
+
             <input type="submit" value="Submit" class="button"/>
         </form>
     </section>
