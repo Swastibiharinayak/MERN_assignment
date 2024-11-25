@@ -6,7 +6,6 @@ let obj = { name: "Swasti", age: 23 };
 let degree = null;
 
 
-
 console.log(`String: "${str}" -> Type: ${typeof str}`);
 console.log(`Number: ${num} -> Type: ${typeof num}`);
 console.log(`Boolean: ${bool} -> Type: ${typeof bool}`);
