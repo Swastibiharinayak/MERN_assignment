@@ -1,8 +1,12 @@
-// 9. Combining Filter and Map
-// Question: Filter numbers greater than 5 from [4, 6, 8, 3] and then double them.
+// 4. While Loop
+// Question: Write a program using a while loop to print numbers from 10 down to 1.
 
-const myArr = [4, 6, 8, 3]
 
-let val= myArr.filter( (num) => num>5 ).map((num) => num * 2)
-
-console.log(val)
+let i=10
+while (i <= 10) {
+    console.log(i);
+    i--;
+    if (i==0){
+        break;
+    }
+}
