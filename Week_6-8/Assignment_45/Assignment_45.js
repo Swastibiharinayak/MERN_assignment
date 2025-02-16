@@ -8,6 +8,7 @@ function fifteen(x,y) {
     }
 }
 
+
 console.log(fifteen(15, 9));
 console.log(fifteen(9, 15));
 console.log(fifteen(7, 8));
