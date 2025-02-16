@@ -12,3 +12,5 @@ function kthGreatest(arr, k) {
         }
     }
 }
+
+kthGreatest([34, 7, 23, 32, 5, 62],3);
