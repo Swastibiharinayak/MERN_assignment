@@ -1,6 +1,6 @@
-// 50. Capitalize First Letter of Each Word in String
+// 51. Transform Number to Hours and Minutes
 
-// Write a JavaScript program to capitalize the first letter of each word in a given string.
+// Write a JavaScript application that transforms a provided numerical value into hours and minutes.
 
 let num= 75;
 function num_To_time(num){
